@@ -226,15 +226,21 @@ article{
     flex: 1px;
     position: relative;
     background-color: #F2F2F2;
+    display: flex;
   }
+
   .popular_room_image {
     width: 150px;
     max-height: 140px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
   }
+
   .most_popular a {
     width: auto;
     min-width: 380px;
   }
+  
   .most_popular_list a:hover {
     box-shadow: none;
   }
@@ -295,7 +301,7 @@ footer {
     justify-content: space-between;
     width: 100%;
     padding-right: 0;
-    display: flex;²
+    display: flex;
     bottom: 0;
   }
 
