@@ -301,6 +301,7 @@ article{
     transition-duration: 0.2s;
     border-radius: 20px;
     text-decoration: none;
+    position: relative;
   
   }
   .activities a:hover {
@@ -329,7 +330,7 @@ footer {
 
   /*responsive*/
 
-  @media all and (max-device-width:450px) {
+  @media all and (max-device-width:600px) {
     .searchfilters{
       width: auto;
       flex-direction: column;
@@ -365,7 +366,4 @@ footer {
   }
   
    @media screen and (min-width: 601px) and (max-width: 780px) {
-  }
-  
-  @media screen and (max-width: 600px) {
   }
