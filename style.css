@@ -1,6 +1,7 @@
 /* G*/
 html,body{
     font-family: raleway;
+
 }
 .flexcentre{
     display: flex;
@@ -66,7 +67,7 @@ html,body{
 
 }
 /*filtres*/
-.searchfilters{
+.searchfilters, .margtitre{
     display: flex;
         margin-top: 2rem;
         flex-wrap: wrap;
@@ -155,7 +156,7 @@ button {
 .conteneur {
 display: flex;
 flex-wrap: wrap;
-background-color: #F2F2F2;
+
 }
 .hebergements {
 display: flex;
@@ -168,7 +169,7 @@ width: fit-content;
 
 flex-wrap: wrap;
 width: fit-content;
-background-color: #fff  
+background-color: #f2f2f2;
 }
 
 .blue_star {
@@ -218,18 +219,22 @@ article{
 }
 
  /* Les plus populaires */
+ aside{
+  background-color: #F2F2F2;
+  border-radius: 20px;
+ }
+
  .most_popular {
     width: 400px;
-    border-radius: 20px;
     padding-left: 40px;
     padding-right: 40px;
     flex: 1px;
     position: relative;
-    background-color: #F2F2F2;
+    
     
   }
   .popular_room_image {
-    width: 100px;
+    width: 150px;
     max-height: 140px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
@@ -238,10 +243,15 @@ article{
     width: auto;
     min-width: 380px;
     display: flex;
+    background-color: white;
+    border-radius: 20px;
+    margin-bottom: 15px;
+
   }
-  .most_popular_list a:hover {
+  .most_popular_list a {
     box-shadow: none;
     border: solid white 1px;
+    
   }
   .most_popular a {
     height: 140px;
@@ -266,7 +276,7 @@ article{
     max-width: 1442px;
   }
   .activitie_image_large {
-    width: 200px;
+    width: 250px;
     height: 250px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
@@ -290,6 +300,7 @@ article{
     box-shadow: -1px 2px 27px 0px rgba(189, 189, 189, 0.65);
     transition-duration: 0.2s;
     border-radius: 20px;
+    text-decoration: none;
   
   }
   .activities a:hover {
@@ -323,8 +334,38 @@ footer {
       width: auto;
       flex-direction: column;
     }
-    .conteneur, aside, .activities_list {
+    .conteneur, aside,.hebergements {
       flex-direction: column;
+      width: auto;
     }
     
+    li{
+      flex-direction: column;
+    }
+    .activities_list{
+      display: flex;
+      flex-direction: column;
+      min-width: 95%;
+      height: auto;
+      
+    }
+    footer {
+      flex-direction: column;
+      display: flex;
+    }
+  }
+  @media screen and (min-width: 981px) and (max-width: 1024px) {
+  }
+  
+  @media screen and (min-width: 781px) and (max-width: 980px) {
+  .mobile{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  }
+  
+   @media screen and (min-width: 601px) and (max-width: 780px) {
+  }
+  
+  @media screen and (max-width: 600px) {
   }
