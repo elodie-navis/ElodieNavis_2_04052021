@@ -208,6 +208,7 @@ article{
     padding: 5px;
     margin: 10px;
     border: solid white 1px;
+    box-shadow: 4px 4px 4px #e4e4e4;
 }
 .body_margin{
     margin: auto;
@@ -226,11 +227,10 @@ article{
 
  .most_popular {
     width: 400px;
-    padding-left: 40px;
+    padding-left: 10px;
     padding-right: 40px;
     flex: 1px;
     position: relative;
-    
     
   }
   .popular_room_image {
@@ -271,6 +271,7 @@ article{
     margin: 0;
     width: 100%;
     flex-direction: column;
+   
   }
   .activities {
     max-width: 1442px;
@@ -343,7 +344,7 @@ footer {
       align-items: flex-start;
     }
     .conteneur, aside,.hebergements {
-      width: 450px;
+      width: 400px;
       flex-direction: column-reverse;
       margin: 10px;
     }
@@ -358,12 +359,21 @@ footer {
       flex-direction: column;
       min-width: 95%;
       height: auto;
+      max-height: auto;
       }
 
     .activitie_image_large{
       height: auto;
+      width: 300px;
     }
-   
+    .activitie_image_medium{
+      height: 180px;
+      width: 300px;
+    }
+    .activitie_image_small{
+      height: auto;
+      width: 300px;
+    }
     footer {
       flex-direction: column;
       display: flex;
@@ -372,22 +382,48 @@ footer {
       flex-direction: column;
 
     }
-    .eco{
-      box-shadow: 0px 0px 0px 2px #F2F2F2;
-      border-radius: 25px 25px 25px 25px;
-      padding: 2px 0px;
+    .decoration{
+      padding-bottom: 10px;
+      margin-top: 100px;
+      padding-right: 60px;
     }
+    .register {
+      color: #0065fc;
+      border-bottom: none;
+      width: auto;
+      text-decoration: none;
+      font-family: "Raleway-Bold";
+    }
+   
+  }
+  @media screen and (min-width: 601px) and (max-width: 1024px) {
+    .activities_list{
+      max-height: 600px;
+    }
+
+    .searchfilters{
+      width: auto;
+
+    }
+  .flexAround{
+    
+  }
+
+  .activities_list{
+    display: flex;
+
+  }
+  .conteneur{
+    width: 600px;
+    display: flex;
+  }
+    
+  }
+  @media screen and (min-width: 1024px) {
+    .activities_list{
+      max-height: 600px;
+    }
+  }
   
-  }
-  @media screen and (min-width: 981px) and (max-width: 1024px) {
-  }
+ 
   
-  @media screen and (min-width: 781px) and (max-width: 980px) {
-  .mobile{
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  }
-  
-   @media screen and (min-width: 601px) and (max-width: 780px) {
-  }
