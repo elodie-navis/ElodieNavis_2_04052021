@@ -163,6 +163,7 @@ display: flex;
 flex-direction: row;
 margin-left: 20px;
 width: fit-content;
+flex-wrap: wrap;
 }
 
 .list_hebergements{
@@ -281,15 +282,16 @@ article{
     height: 250px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    
   }
   .activitie_image_medium {
-    width: 340px;
+    width: 320px;
     height: 205px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
   }
   .activitie_image_small {
-    width: 340px;
+    width: 320px;
     height: 150px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
@@ -352,14 +354,14 @@ footer {
       background-color: white;
     }
     li{
-      flex-direction: column;
+      flex-direction: row;
     }
     .activities_list{
       display: flex;
       flex-direction: column;
       min-width: 95%;
       height: auto;
-      max-height: auto;
+     
       }
 
     .activitie_image_large{
@@ -394,18 +396,75 @@ footer {
       text-decoration: none;
       font-family: "Raleway-Bold";
     }
+
+    .taille{
+      width: 65%;
+    }
+    
+    .flexbetween{
+      border-bottom: 3px solid;
+    }
    
   }
   @media screen and (min-width: 601px) and (max-width: 1024px) {
   
-  .conteneur, aside,.hebergements {
-    width: 600px;
-    flex-direction: column-reverse;
-    margin: 10px;
+  /* Hébergements */
+  .room_img {
+    width: 320px;
   }
-  .list_hebergements{
-    background-color: white;
+  .list_hebergements a {
+    width: max-content;
   }
+  .list_hebergements p {
+    width: 100%;
+    padding-left: 60px;
+  }
+  .list_hebergements {
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .list_hebergements h2 {
+    width: 100%;
+  }
+  .list_hebergements h4 {
+    width: 100%;
+  }
+  
+   /* Les plus populaires */
+   .most_popular {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    padding: 30px;
+  }
+  .most_popular a,
+  .most_popular li {
+    width: auto;
+    height: auto;
+    max-width: none;
+  }
+  .popular_room_image {
+    width: 300px;
+    height: 200px;
+  }
+  .most_popular h2 {
+    font-size: 1.2em;
+  }
+  .most_popular h3 {
+    font-size: 1em;
+  }
+  .description {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  
   li{
     flex-direction: column;
   }
@@ -414,7 +473,6 @@ footer {
     flex-direction: column;
     min-width: 95%;
     height: auto;
-    max-height: auto;
     }
 
   .activitie_image_large{
@@ -448,6 +506,12 @@ footer {
     text-decoration: none;
     font-family: "Raleway-Bold";
   }
+  .taille{
+    width: 60%;
+  }
+  
+
+  
 }
   @media screen and (min-width: 1024px) {
     .activities_list{
