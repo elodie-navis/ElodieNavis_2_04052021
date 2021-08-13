@@ -2,6 +2,7 @@
 html,body{
     font-family: raleway;
 
+
 }
 .flexcentre{
     display: flex;
@@ -161,7 +162,7 @@ flex-wrap: wrap;
 .hebergements {
 display: flex;
 flex-direction: row;
-margin-left: 20px;
+
 width: fit-content;
 flex-wrap: wrap;
 }
@@ -181,7 +182,6 @@ background-color: #f2f2f2;
 }
 .taillehebergement{
     flex: 2;
-    height: 650px;
     margin-right: 20px;
     border-radius: 10px;
 }
@@ -199,8 +199,11 @@ background-color: #f2f2f2;
     display: flex;
     justify-content: space-between;
     width: 70px;
-    margin-left: 30px;
+    margin-left: 10px;
     margin-top: 10px;
+}
+h2, h3 {
+  margin-left: 10px;
 }
 article{
     margin-left: auto;
@@ -212,7 +215,9 @@ article{
     box-shadow: 4px 4px 4px #e4e4e4;
 }
 .body_margin{
-    margin: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+
 
 }
 .taillepopuplaire{
@@ -259,9 +264,11 @@ article{
   }
   .description h2 {
     font-size: 1em;
+
   }
   .description h3 {
     font-size: 0.8em;
+  
   }
 
    /* Activités */
@@ -269,7 +276,8 @@ article{
   .activities_list {
     display: flex;
     flex-wrap: wrap;
-    margin: 0;
+    margin-left: 20px;
+    margin-right: 20px;
     width: 100%;
     flex-direction: column;
    
@@ -406,7 +414,7 @@ footer {
     }
    
   }
-  @media screen and (min-width: 601px) and (max-width: 1024px) {
+  @media screen and (min-width: 601px) and (max-width: 1023px) {
   
   /* Hébergements */
   .room_img {
@@ -423,8 +431,12 @@ footer {
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 10px;
   }
 
+.hebergements{
+  flex-direction: column-reverse;
+}
   .list_hebergements h2 {
     width: 100%;
   }
@@ -440,7 +452,7 @@ footer {
     margin-top: 20px;
     margin-bottom: 20px;
     border-radius: 20px;
-    padding: 30px;
+    padding: 0px 30px;
   }
   .most_popular a,
   .most_popular li {
@@ -464,13 +476,14 @@ footer {
     flex-direction: column;
     justify-content: space-around;
   }
-  
+
   li{
     flex-direction: column;
   }
   .activities_list{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     min-width: 95%;
     height: auto;
     }
@@ -480,7 +493,7 @@ footer {
     width: 300px;
   }
   .activitie_image_medium{
-    height: 180px;
+    height: 200px;
     width: 300px;
   }
   .activitie_image_small{
@@ -517,6 +530,8 @@ footer {
     .activities_list{
       max-height: 600px;
     }
+  
+    
   }
   
  
