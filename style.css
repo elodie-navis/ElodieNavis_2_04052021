@@ -65,7 +65,10 @@ html,body{
     background-color: #F2F2F2;
     width: 45px;
     border: none;
+}
 
+.register{
+  text-decoration: none;
 }
 /*filtres*/
 .searchfilters, .margtitre{
@@ -202,7 +205,7 @@ background-color: #f2f2f2;
     margin-left: 10px;
     margin-top: 10px;
 }
-h2, h3 {
+h4, h5 {
   margin-left: 10px;
 }
 article{
@@ -300,7 +303,7 @@ article{
   }
   .activitie_image_small {
     width: 320px;
-    height: 150px;
+    height: 205px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
   }
@@ -342,28 +345,35 @@ footer {
     margin-right: auto;
     max-width: 70%;
   }
+  footer li{
+    text-decoration: none;
+  }
 
 
   /*responsive*/
 
   @media all and (max-device-width:600px) {
+ /*MOBILE*/
+
     .searchfilters{
       width: auto;
       flex-direction: column;
       display: flex;
       align-items: flex-start;
     }
+    li{
+      flex-direction: row;
+    }
+    
     .conteneur, aside,.hebergements {
       width: 375px;
       flex-direction: column-reverse;
-      margin: 10px;
+      
     }
     .list_hebergements{
       background-color: white;
     }
-    li{
-      flex-direction: row;
-    }
+    
     .activities_list{
       display: flex;
       flex-direction: column;
@@ -384,9 +394,14 @@ footer {
       height: auto;
       width: 300px;
     }
+
+    .activities{
+      margin-left: 15px;
+    }
     footer {
       flex-direction: column;
       display: flex;
+      
     }
     .filters{
       flex-direction: column;
@@ -406,16 +421,32 @@ footer {
     }
 
     .taille{
-      width: 65%;
+      width: 70%;
     }
     
     .flexbetween{
       border-bottom: 3px solid;
     }
-   
+    
   }
   @media screen and (min-width: 601px) and (max-width: 1023px) {
   
+    .filters{
+      flex-direction: column;
+  
+    }
+    .decoration{
+      padding-bottom: 10px;
+      margin-top: 100px;
+      padding-right: 60px;
+    }
+    .register {
+      border-bottom: none;
+      width: auto;
+      text-decoration: none;
+      font-family: "Raleway-Bold";
+    }
+
   /* Hébergements */
   .room_img {
     width: 320px;
@@ -480,50 +511,49 @@ footer {
   li{
     flex-direction: column;
   }
+  /*activites*/
+
+  .activities H2{
+    margin-left: 25px;
+  }
   .activities_list{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    min-width: 95%;
+    min-width: 100%;
     height: auto;
+    text-align: center;
+    width: 250px;
     }
 
+  .activities{
+    margin-left: auto; 
+  }
   .activitie_image_large{
     height: auto;
-    width: 300px;
+    width: 338px;
   }
   .activitie_image_medium{
-    height: 200px;
-    width: 300px;
+    height: 224px;
+    width: 338px;
   }
   .activitie_image_small{
     height: auto;
-    width: 300px;
+    width: 338px;
   }
+
+ 
+
+  /*footer*/
+
   footer {
     flex-direction: column;
     display: flex;
   }
-  .filters{
-    flex-direction: column;
-
-  }
-  .decoration{
-    padding-bottom: 10px;
-    margin-top: 100px;
-    padding-right: 60px;
-  }
-  .register {
-    border-bottom: none;
-    width: auto;
-    text-decoration: none;
-    font-family: "Raleway-Bold";
-  }
-  .taille{
+ 
+ .taille{
     width: 60%;
   }
-  
-
   
 }
   @media screen and (min-width: 1024px) {
