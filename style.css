@@ -355,6 +355,7 @@ footer {
   }
   .footer_link li{
     list-style-type: none;
+    color: black;
   }
   .footer_link li a {
     text-decoration: none;
