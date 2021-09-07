@@ -2,7 +2,8 @@
 html,body{
     font-family: raleway;
     width: 100%;
-    max-width: 1500px;
+    max-width: 1224px;
+    margin: auto;
    /* overflow-x: hidden; */
 
 
@@ -581,16 +582,17 @@ footer {
   }
   .activities_list{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     min-width: 100%;
     height: auto;
     text-align: center;
     width: 250px;
+    margin-left: 35px;
     }
 
   .activities{
-    margin-left: auto; 
+    margin-left: 35px; 
   }
   .activitie_image_large{
     height: auto;
@@ -604,7 +606,10 @@ footer {
     height: auto;
     width: 338px;
   }
+  .activities_list a {
+    width: 338px;
 
+  }
  
 
   /*footer*/
@@ -625,7 +630,7 @@ footer {
     }
   
     .activitie_image_large{
-      width: 285px;
+      width: 280px;
     }  
     .activitie_image_medium{
       width: 280px; 
